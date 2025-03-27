@@ -4,7 +4,7 @@ This repository contains the ROS 2 workspace and code used to build an autonomou
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
