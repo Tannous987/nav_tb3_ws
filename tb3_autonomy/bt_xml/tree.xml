@@ -1,0 +1,29 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <Fallback>
+      <Sequence>
+        <IsBatteryLow name="check_if_low" />
+        <GoToPose name="go_to_station" loc="station" />
+        <WaitSeconds name="recharge_wait" seconds="30" />
+        <RechargeBattery name="recharge_battery" />
+      </Sequence>
+      <Sequence>
+        <GoToPose name="go_to_location1" loc="location1" />
+        <DecrementBattery name="dec_battery1" />
+        <CheckBattery name="check_battery1" />
+
+        <GoToPose name="go_to_location2" loc="location2" />
+        <DecrementBattery name="dec_battery2" />
+        <CheckBattery name="check_battery2" />
+
+        <GoToPose name="go_to_location3" loc="location3" />
+        <DecrementBattery name="dec_battery3" />
+        <CheckBattery name="check_battery3" />
+
+        <GoToPose name="go_to_location4" loc="location4" />
+        <DecrementBattery name="dec_battery4" />
+        <CheckBattery name="check_battery4" />
+      </Sequence>
+    </Fallback>
+  </BehaviorTree>
+</root>
