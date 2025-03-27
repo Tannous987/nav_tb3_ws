@@ -101,7 +101,7 @@ ros2 launch tb3_autonomy autonomy.launch.py
 
 ---
 
-## 🤖 About
+## About
 
 This project was developed as part of the **InMind Final Project** using:
 - ROS 2 Humble
